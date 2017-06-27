@@ -28,7 +28,7 @@
                 android:layout_height="0dp">
 
 
-                <com.example.avjindersinghsekhon.toodle.CustomTextInputLayout
+                <com.example.avjindersinghsekhon.minimaltodo.CustomTextInputLayout
                     app:hintTextAppearance="@style/FloatingLabelTextAppearance"
                     android:id="@+id/toDoCustomTextInput"
                     android:gravity="center"
@@ -48,11 +48,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </com.example.avjindersinghsekhon.toodle.CustomTextInputLayout>
+                </com.example.avjindersinghsekhon.minimaltodo.CustomTextInputLayout>
 
             </LinearLayout>
             <LinearLayout
-                android:background="@android:color/white"
                 android:id="@+id/todoReminderAndDateContainerLayout"
                 android:layout_weight="1.5"
                 android:layout_width="match_parent"
@@ -72,6 +71,7 @@
                     <ImageButton
                         android:layout_weight=".4"
                         android:background="@android:color/transparent"
+                        android:id="@+id/userToDoReminderIconImageButton"
                         android:padding="8dp"
                         android:src="@drawable/ic_add_alarm_grey_200_24dp"
                         android:layout_width="0dp"
@@ -83,6 +83,7 @@
                         android:paddingRight="8dp"
                         android:paddingTop="8dp"
                         android:paddingBottom="8dp"
+                        android:id="@+id/userToDoRemindMeTextView"
                         android:text="@string/remind_me"
                         android:textSize="16sp"
                         android:textColor="@color/secondary_text"
